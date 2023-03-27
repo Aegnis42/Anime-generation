@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/register/register.css">
     <title>Anime generqtion | Sign up</title>
-    <meta name="description" content="Easily create a list of all the anime you've watched and keep track of your total watch time with our user-friendly website. Organize by genre, release year, or rating and receive personalized recommendations. Our platform automatically calculates your total watch time so you don't have to. Start tracking your anime viewing habits today and join our community of passionate fans.">
+    <meta name="description" content="">
+    
 </head>
 <body> 
     <div class="bLeft"></div>
@@ -20,13 +21,13 @@
             
         </header>
         <main>
-        <form action="">
+        <form>
             <input type="text" placeholder="User-name">
-            <input type="text" placeholder="Password">
-            <input type="text" placeholder="Password">
-            <input type="text" placeholder="Password">
+            <input type="text" placeholder="E-mail">
+            <input type="password" placeholder="Password" id="password">
+            <input type="password" placeholder="Confirme password" id="confirm-password">
             <div>
-                <input type="checkbox" name="Remember" id="rememberMe">
+                <input type="checkbox" name="Remember" id="CGUCheckBox">
                 <p id="remember">Accept <a href="#"><strong>CGU</strong></a></p>
                 <input id="connect" type="button" value="Connect" name="Connect">
             </div>
@@ -39,4 +40,7 @@
     
     
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="../../back/userSignUp/userSignUp.js"></script>
 </html>

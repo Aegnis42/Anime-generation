@@ -68,7 +68,7 @@ form img{
     left: 70%;
 }
 
-input[type="text"],input[type="button"]{
+input[type="text"],input[type="password"],input[type="button"]{
     background-color: #16111C;
     border: 1px solid #332244;
     padding: 20px 300px 20px 20px;

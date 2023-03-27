@@ -12,7 +12,7 @@ body {
     grid-template-areas: 
       "bLeft container bRight"; 
       background-color: #0A0A0A;
-      overflow: hidden;
+
   }
   .container {
     display: grid; 
@@ -69,12 +69,13 @@ form img{
     position: absolute;
     width: 25%;
 }
-#prfilPicture{
+#profilPicture{
     margin-left: 25px;
     position: relative;
     bottom: 15px;
     height: 180px;
     width: 180px;
+    cursor: pointer;
 }
 #girlLeft{
     bottom: 0px;
@@ -96,7 +97,7 @@ input[type="text"],input[type="button"],#profilDesc{
 #save{
     width: auto;
     padding: 20px 50px;
-    margin-left: 80%;
+    align-self: flex-end;
 }
 #save:active{
     background-color: #2a2136;
@@ -109,80 +110,25 @@ input[type="text"],input[type="button"],#profilDesc{
     }
 }
 @media screen and (max-width: 1250px) {
-    form img{ 
+    #girlLeft{ 
         display : none;
     }
 }
-@media screen and (max-width: 650px) {
-    input[type="text"],input[type="button"]{
-        padding: 10px 100px 10px 10px;
-    }
-    form{
-        width :100%;
-    }
-    input[type=checkbox] {
-        margin-top: 55px ;
-        height: 30px;
-        width: 30px;
-    }
-    #connect{
-        padding: 10px;
-    }
-    form p{
-        width: 300px;
-        font-size: 12px;
-    }
-    header img{
-        width: 150px;
-    }
-    h1{
-        margin-top: 25px;
-        font-size: 30px;
-    }
-    h2{
-        margin-top: 15px;
-        font-size: 20px;
-    }
-    #remember {
-        width: 150px;
-        margin-top: 60px;
-    }
-}
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 700px) {
     body {
         grid-template-columns: 0 1fr 0;
     }
     input[type="text"],input[type="button"]{
         padding: 10px 40px 10px 10px;
     }
+    form div{
+        flex-direction: column-reverse;
+    }
     form{
-        width :100%;
-    }
-    input[type=checkbox] {
-        margin-top: 55px ;
-        height: 30px;
-        width: 30px;
-    }
-    #connect{
-        padding: 10px;
-    }
-    form p{
-        width: 240px;
-        font-size: 10px;
+        width :90%;
     }
     header img{
         width: 100px;
     }
-    h1{
-        margin-top: 25px;
-        font-size: 25px;
-    }
-    h2{
-        margin-top: 15px;
-        font-size: 20px;
-    }
-    #remember {
-        width: 100px;
-        margin-top: 60px;
-    }
+
 }
