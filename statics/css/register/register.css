@@ -44,7 +44,8 @@ form{
 }
 form div{
     display: flex;
-    justify-content: center;
+    width: 100%;
+    justify-items: flex-start;
 }
   .bLeft { grid-area: bLeft;}
   .bRight { grid-area: bRight; }
@@ -71,10 +72,16 @@ form img{
 input[type="text"],input[type="password"],input[type="button"]{
     background-color: #16111C;
     border: 1px solid #332244;
-    padding: 20px 300px 20px 20px;
+    padding: 0 20px;
+    height: 6vh;
+    width: 100%;
     border-radius: 10px;
     margin-bottom: 30px;
     box-shadow: #ffffff3b 0 0 15px;
+}
+input[type="button"]{
+
+    width: auto;
 }
 input[type="button"]:active{
     background-color: #2a2136;

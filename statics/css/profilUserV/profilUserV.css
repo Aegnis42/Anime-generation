@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: aliceblue;
+}
+body {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 25px 1fr 25px;
+  grid-template-rows: 100vh;
+  grid-template-areas: "bLeft container bRight";
+  background-color: #0a0a0a;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 150px 1fr;
+  grid-template-areas:
+    "header"
+    "main";
+  grid-area: container;
+}
+header {
+  background-color: #16111c;
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header img {
+  height: 100px;
+  width: 150px;
+}
+
+main {
+  grid-area: main;
+  margin-top: 50px;
+}
+
+section {
+  margin: 0 auto;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+section div div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+section input,
+#profilDesc {
+  width: 100%;
+}
+.bLeft {
+  grid-area: bLeft;
+}
+.bRight {
+  grid-area: bRight;
+}
+.bLeft,
+.bRight {
+  box-shadow: #ffffff3b 0 0 100px;
+  background-color: #16111c;
+}
+span {
+  margin-top: 2vh;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: row;
+}
+h3 {
+  margin-right: 15px;
+}
+#desc {
+  margin-top: 2vh;
+  align-self: flex-start;
+}
+section img {
+  position: absolute;
+  width: 25%;
+}
+#profilPicture {
+  margin-left: 25px;
+  position: relative;
+  bottom: 15px;
+  height: 180px;
+  width: 180px;
+  cursor: pointer;
+}
+#girlLeft {
+  bottom: 0px;
+  left: 25px;
+}
+#girlRight {
+  bottom: 0;
+  left: 70%;
+}
+
+input[type="button"] {
+  background-color: #16111c;
+  border: 1px solid #332244;
+  padding: 20px 300px 20px 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: #ffffff3b 0 0 15px;
+}
+
+#modified {
+  width: auto;
+  padding: 20px 50px;
+  align-self: flex-end;
+}
+#modified:active {
+  background-color: #2a2136;
+  box-shadow: #ffffff3b 0 0 10px;
+}
+
+@media screen and (max-width: 1800px) {
+  #girlRight {
+    display: none;
+  }
+}
+@media screen and (max-width: 1250px) {
+  #girlLeft {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  body {
+    grid-template-columns: 0 1fr 0;
+  }
+  input[type="text"],
+  input[type="button"] {
+    padding: 10px 40px 10px 10px;
+  }
+  section div {
+    flex-direction: column-reverse;
+  }
+  section {
+    width: 90%;
+  }
+  header img {
+    width: 100px;
+  }
+}
