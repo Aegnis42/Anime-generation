@@ -11,15 +11,43 @@ const passwordInput = document.querySelector('input[placeholder="Password"]');
 const descTextarea = document.getElementById("profilDesc");
 const profilPictureElement = document.getElementById("profilPicture");
 
+axios.get('https://afpatraining.snage.tech/profile', {
+  headers: {
+    Authorization: token,
+    'x-api-key': apiKey
+  }
+})
+  .then(function (response) {
+    const userData = response.data.user;
+    userNameInput.value = userData.username;
+    emailInput.value = userData.email;
+    descTextarea.value = userData.description;
+
+    if (userData.profilePicture) {
+      profilPictureElement.setAttribute('src', userData.profilePicture);
+    } else {
+      profilPictureElement.setAttribute('src', '../assets/image/rectangle1.png');
+    }
+  })
+  .catch(function (error) {
+    console.error('Error:', error);
+    window.location.href = '../../index.html';
+  });
+
 document.getElementById("save").addEventListener("click", function() {
-    const hashedPassword = CryptoJS.SHA256(passwordInput.value).toString();
-  axios.put('https://afpatraining.snage.tech/profile', {
-    username: userNameInput.value,
-    email: emailInput.value,
-    password: hashedPassword,
-    description: descTextarea.value,
-    profilePicture: profilPictureElement.getAttribute('src')
-  }, {
+    let data = {
+      username: userNameInput.value,
+      email: emailInput.value,
+      description: descTextarea.value,
+      profilePicture: profilPictureElement.getAttribute('src')
+    };
+
+    if (passwordInput.value) {
+      const hashedPassword = CryptoJS.SHA256(passwordInput.value).toString();
+      data.password = hashedPassword;
+    }
+    
+  axios.put('https://afpatraining.snage.tech/profile', data, {
     headers: {
       Authorization: token,
       'x-api-key': apiKey

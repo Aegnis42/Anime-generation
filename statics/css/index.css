@@ -131,7 +131,11 @@ input[type=checkbox]:checked {
         display : none;
     }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
+    body {
+        grid-template-columns: 0 100vw 0;
+        overflow: hidden;
+    }
     input[type="text"],input[type="button"]{
         padding: 10px 100px 10px 10px;
     }
@@ -167,9 +171,6 @@ input[type=checkbox]:checked {
     }
 }
 @media screen and (max-width: 400px) {
-    body {
-        grid-template-columns: 0 1fr 0;
-    }
     input[type="text"],input[type="button"]{
         padding: 10px 40px 10px 10px;
     }
