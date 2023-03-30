@@ -2,8 +2,8 @@ const connectButton = document.getElementById("connect");
 
 connectButton.addEventListener("click", function() {
 
-    const username = document.querySelector('input[type="text"][placeholder="User-name"]').value;
-    const email = document.querySelector('input[type="text"][placeholder="E-mail"]').value;
+    const username = document.getElementById("userName").value;
+    const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
     const confirmPassword = document.getElementById("confirm-password").value;
     const apiKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2Nzk0Nzg3MTksImV4cCI6MTY3OTQ3ODc3OX0.M4NjzvH6nnS1k9QTbMUAJ09nOTJcLswijwABb-sBmGQ';
@@ -45,6 +45,7 @@ connectButton.addEventListener("click", function() {
     })
     .then(function (response) {
         console.log('Data received:', response.data);
+        window.location.href = '../../index.html'
     
     })
     .catch(function (error) {

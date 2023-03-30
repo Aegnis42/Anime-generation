@@ -3,8 +3,8 @@ const rememberMeCheckbox = document.getElementById("rememberMe");
 const apiKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2Nzk0Nzg3MTksImV4cCI6MTY3OTQ3ODc3OX0.M4NjzvH6nnS1k9QTbMUAJ09nOTJcLswijwABb-sBmGQ';
 
 connectButton.addEventListener("click", function() {
-    const email = document.querySelector('input[type="text"][placeholder="E-mail"]').value;
-    const password = document.querySelector('input[type="password"][placeholder="Password"]').value;
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
     const hashedPassword = CryptoJS.SHA256(password).toString();
     axios.post('https://afpatraining.snage.tech/login', {
         email: email,

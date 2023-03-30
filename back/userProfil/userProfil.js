@@ -5,9 +5,9 @@ if (!token) {
   window.location.href = '../../index.html';
 }
 
-const userNameInput = document.querySelector('input[placeholder="User-name"]');
-const emailInput = document.querySelector('input[placeholder="email"]');
-const passwordInput = document.querySelector('input[placeholder="Password"]');
+const userNameInput = document.getElementById('userName');
+const emailInput = document.getElementById('email');
+const passwordInput = document.getElementById('password');
 const descTextarea = document.getElementById("profilDesc");
 const profilPictureElement = document.getElementById("profilPicture");
 

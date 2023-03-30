@@ -84,6 +84,9 @@ h3 {
   margin-top: 2vh;
   align-self: flex-start;
 }
+#userDesc {
+  margin-bottom: 8vh;
+}
 section img {
   position: absolute;
   width: 25%;
