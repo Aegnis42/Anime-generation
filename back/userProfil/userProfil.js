@@ -1,6 +1,6 @@
 const apiKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2Nzk0Nzg3MTksImV4cCI6MTY3OTQ3ODc3OX0.M4NjzvH6nnS1k9QTbMUAJ09nOTJcLswijwABb-sBmGQ';
 
-const token = sessionStorage.getItem('token') || localStorage.getItem('token');
+const token = localStorage.getItem('token');
 if (!token) {
   window.location.href = '../../index.html';
 }

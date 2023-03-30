@@ -35,8 +35,8 @@ connectButton.addEventListener("click", function() {
 
     axios.post('https://afpatraining.snage.tech/signup',{
         
-        username: username,
-        email: email,
+        username,
+        email,
         password: hashedPassword
     }, {
         headers: {
