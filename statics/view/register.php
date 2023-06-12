@@ -21,16 +21,16 @@
             
         </header>
         <main>
-        <form>
-            <input type="text" placeholder="User-name" id="userName">
-            <input type="text" placeholder="E-mail" id="email">
-            <input type="password" placeholder="Password" id="password">
-            <input type="password" placeholder="Confirme password" id="confirm-password">
-            <div>
-                <input type="checkbox" name="Remember" id="CGUCheckBox">
-                <p id="remember">Accept <a href="#"><strong>CGU</strong></a></p>
-                <input id="connect" type="button" value="Connect" name="Connect">
-            </div>
+        <formaction="register.php" method="POST">
+        <input type="text" placeholder="User-name" id="userName" name="username">
+        <input type="text" placeholder="E-mail" id="email" name="email">
+        <input type="password" placeholder="Password" id="password" name="password">
+        <input type="password" placeholder="Confirm password" id="confirm-password" name="confirm_password">
+        <div>
+            <input type="checkbox" name="Remember" id="CGUCheckBox">
+            <p id="remember">Accept <a href="#"><strong>CGU</strong></a></p>
+            <input id="connect" type="submit" value="Connect" name="Connect">
+        </div>
             <img src="../assets/image/klipartz1.webp" alt="girlleft" id="girlLeft">
             <img src="../assets/image/image_2023-03-23_005217778-removebg-preview1.png" alt="girlpoint" id="girlRight">
         </form>

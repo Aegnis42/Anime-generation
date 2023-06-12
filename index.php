@@ -23,7 +23,7 @@
             <input type="text" placeholder="E-mail" id="email">
             <input type="password" placeholder="Password" id="password">
             <p>Do you need to <a href=""><strong>reset your password ?</strong></a></p>
-            <p>Not yet have an account?<a id="register" href="statics/view/register.html"><strong>Register yourself.</strong></a></p>
+            <p>Not yet have an account?<a id="register" href="statics/view/register.php"><strong>Register yourself.</strong></a></p>
             <div>
                 <input type="checkbox" name="Remember" id="rememberMe">
                 <p id="remember">Remember me</p>
