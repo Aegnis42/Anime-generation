@@ -133,7 +133,7 @@ input[type=checkbox]:checked {
 }
 @media screen and (max-width: 700px) {
     body {
-        grid-template-columns: 0 100vw 0;
+        grid-template-columns: 5vw 90vw 5vw;
         overflow: hidden;
     }
     input[type="text"],input[type="button"]{
@@ -172,10 +172,10 @@ input[type=checkbox]:checked {
 }
 @media screen and (max-width: 400px) {
     input[type="text"],input[type="button"]{
-        padding: 10px 40px 10px 10px;
+        padding: 1em 3em 1em 1em;
     }
     form{
-        width :100%;
+        width :90%;
     }
     input[type=checkbox] {
         margin-top: 55px ;

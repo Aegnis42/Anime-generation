@@ -14,7 +14,7 @@
     <div class="container">
        
         <header>
-            <img src="/statics/assets/icone/logo.webp" alt="Logo.png">
+            <img src="statics/assets/icone/logo.webp" alt="Logo.png">
             <h1>Anime Generation</h1>
             <h2>Choose your favorite</h2>
         </header>

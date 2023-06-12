@@ -9,13 +9,13 @@
     <meta name="description" content="">
     
 </head>
-<body> 
+<body>
     <div class="bLeft"></div>
     <div class="bRight"></div>
     <div class="container">
        
         <header>
-            <img src="/statics/assets/icone/logo.webp" alt="Logo.png">
+            <img src="../assets/icone/logo.webp" alt="Logo.png">
             <h2>Welcome to</h2>
             <h1>Anime Generation</h1>
             
@@ -37,10 +37,7 @@
        
     </main>
     </div>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="../../back/userSignUp/userSignUp.js"></script>
+
 </body>
 
 </html>
